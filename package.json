@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/KDT-IaaS-Class-One-Group/example-ts-react-babel-webpack#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "typescript": "^5.3.2"
   }
 }
