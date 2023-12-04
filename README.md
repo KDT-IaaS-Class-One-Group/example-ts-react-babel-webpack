@@ -32,3 +32,22 @@
   - typescript + React로 개발을 착수하고 최종형태는 babel이 컴파일하게 되는 구조이다.
   - **babel 컴파일러와 typescript 컴파일러는 역할은 같지만 해당 예제프로젝트에서는 typescript 컴파일러를 사용하지 않는다.**
 
+## 5. babel config 파일 생성
+디렉토리에서 .babelrc, babel.config.js 둘중 하나를 선택해서 생성
+
+  - 예제상으로는 지난번과 다르게 rc파일을 생성했다.
+  - 담겨진 내용은 preset(프리셋), pre set 이므로 말그대로 사전 설정을 뜻한다.
+```
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ]
+}
+```
+  - 해당 설정에서 "presets"라는 key의 배열 순서가 상당히 중요한데,
+  - typescript를 사용하고 React를 사용하고 babel을 통해 컴파일하는 구조이므로
+  - typescript를 먼저 컴파일하고 React를 컴파일하고 babel을 통해 최종 컴파일을 하게 된다.
+  - typescript를 가지고 React를 작성하고, 작성된 React는 preset-env를 통해 최종 컴파일된다.
+
