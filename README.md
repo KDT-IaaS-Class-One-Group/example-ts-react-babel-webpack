@@ -69,3 +69,10 @@ npm install --save-dev webpack@5 webpack-cli webpack-dev-server babel-loader css
 
  
  - html-webpack-plugin : HTML에 번들링된 자바스크립트 파일을 삽입하는 플러그인으로, 설치하지 않고 번들링하면, HTML과 JS파일이 분리된 상태로 번들링된다. 따라서 클라이언트 요청을 단순화하기 위해 매우 자주 설치되는 플러그인
+
+## 7. webpack config 파일 생성
+`npx webpack-cli init`
+
+- 해당 init 방식은 최신 webpack 버전에서만 작동될 수 있으므로 기본설정을 수동으로 작성하는 경우가 더 많다.
+
+- 해당 명령을 실행하면 @webpack-cli/generators가 설치되는 일련의 과정이 진행된다.
